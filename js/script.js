@@ -33,3 +33,15 @@ let employees = [
     }
 
 ]
+let team = document.getElementById('ista')
+
+for(let i = 0 ; i<employees.length;i++){
+    for(let property in employees[i]){
+        let caratteristica = document.createElement('li')
+        let valore = employees[i][property]
+        caratteristica.innerText = valore
+        console.log(caratteristica)
+        team.append(caratteristica)
+        console.log(team);
+    }
+}
