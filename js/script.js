@@ -1,4 +1,4 @@
-//MILESTONE 1 creazione di un arrey di oggetti
+//MILESTONE 0 creazione di un arrey di oggetti
 let employees = [
 
     {
@@ -36,12 +36,13 @@ let employees = [
 let team = document.getElementById('ista')
 
 for(let i = 0 ; i<employees.length;i++){
+    console.log(employees[i])
     for(let property in employees[i]){
-        let caratteristica = document.createElement('li')
-        let valore = employees[i][property]
-        caratteristica.innerText = valore
-        console.log(caratteristica)
-        team.append(caratteristica)
-        console.log(team);
+            let caratteristica = document.createElement('li')
+            let valore = employees[i][property]
+            caratteristica.innerText = valore
+        
+            team.append(caratteristica)
+            
     }
 }
